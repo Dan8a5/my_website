@@ -18,8 +18,16 @@ const ProjectsPage = () => {
       image: "/syndicate_vintage.jpg",
       tech: ["React", "FastAPI", "Tailwind CSS", "Supabase"],
       github: "https://github.com/yourusername/syndicate-vault",
-      live: "https://syndicate-vault.com"
-    }
+      // live: "https://syndicate-vault.com"
+    },
+    {
+      title: "GitHub User Query",
+      description: "A React-based GitHub user query application that allows users to search for GitHub users and view their repositories. Features a responsive design and utilizes the GitHub API for data retrieval.",
+      image: "/github_user.png",
+      tech: ["React", "Tailwind CSS",],
+      github: "https://github.com/Dan8a5/github-user-query",
+      // live: "https://trailtrek.app"
+    },
   ];
 
   return (
