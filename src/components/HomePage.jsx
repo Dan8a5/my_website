@@ -91,7 +91,7 @@ const HomePage = () => {
             </div>
 
             <p className="text-cream/80 text-xl mb-12 max-w-xl leading-relaxed">
-              Hello! I'm Daniel, a Greenville, South Carolina based Software Developer with a passion for creating innovative digital experiences.
+              Hello! I'm Daniel Ochoa, a Greenville, South Carolina based Software Developer with a passion for creating innovative digital experiences.
             </p>
 
             <button 

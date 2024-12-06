@@ -6,7 +6,7 @@ const ProjectsPage = () => {
   const projects = [
     {
       title: "Trail Trek",
-      description: "An AI-powered National Parks trip planner that creates personalized itineraries and generates detailed park descriptions using OpenAI API. Features interactive search, real-time weather updates, and smart trip planning capabilities.",
+      description: "An AI-powered National Parks trip planner that creates personalized itineraries and generates detailed park descriptions using OpenAI API. Features interactive search and smart trip planning capabilities.",
       image: "/trailtrek.jpg",
       tech: ["React", "FastApi", "Tailwind CSS", "Supabase"],
       github: "https://github.com/Dan8a5/trail_trek_frontend",
@@ -14,7 +14,7 @@ const ProjectsPage = () => {
     },
     {
       title: "Syndicate Vintage Vault",
-      description: "A vintage clothing e-commerce platform featuring curated collections from different decades. Includes dynamic filtering, secure checkout, and responsive design for optimal mobile shopping experience.",
+      description: "A vintage clothing e-commerce platform featuring curated collections from different decades. Includes dynamic filtering, secure checkout, and responsive design for optimal  shopping experience.",
       image: "/syndicate_vintage.jpg",
       tech: ["React", "FastAPI", "Tailwind CSS", "Supabase"],
       github: "https://github.com/yourusername/syndicate-vault",
