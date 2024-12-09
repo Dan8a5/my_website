@@ -10,7 +10,7 @@ const MainLayout = () => {
      <>
        <Navigation />
        <main className="h-screen overflow-y-auto scroll-smooth">
-         <div className="fixed inset-0 bg-gradient-to-br from-[#4A5043] via-[#556B2F] to-[#8B9D83]" />
+         <div className="fixed inset-0 bg-gradient-to-br from-[#0c0c0c] via-[#111111] to-[#3c3e3b]" />
          <div className="relative">
            <section id="home" className="min-h-screen">
              <HomePage />

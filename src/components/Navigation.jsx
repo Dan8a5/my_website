@@ -29,7 +29,7 @@ const Navigation = () => {
             onClick={() => scrollToSection('home')} 
             className="text-cream text-3xl font-light"
           >
-            do
+            DO
           </button>
           <div className="hidden md:flex gap-8">
             {navItems.map((item) => (
