@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiMail, FiUser, FiMessageCircle, FiSend } from 'react-icons/fi';
+import { supabase } from '../lib/supabaseClient';
 
 const InputField = ({ icon: Icon, label, ...props }) => (
   <div>
@@ -42,7 +43,16 @@ function ContactPage() {
     setIsSubmitting(true);
     
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const { error } = await supabase
+        .from('contacts')
+        .insert([{
+          name: formData.name,
+          email: formData.email,
+          message: formData.message
+        }]);
+
+      if (error) throw error;
+
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
