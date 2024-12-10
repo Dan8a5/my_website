@@ -17,7 +17,7 @@ const AboutPage = () => {
   const skills = [
     {
       category: "Frontend",
-      items: ["React", "JavaScript", "HTML/CSS", "Tailwind CSS"],
+      items: ["React", "JavaScript", "HTML","CSS", "Tailwind"],
     },
     {
       category: "Backend",
