@@ -103,7 +103,7 @@ const HomePage = () => {
 
           <div className={`relative transform transition-all duration-1000 ${
             isLoaded ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}`}>
-            <div className="relative w-[400px] h-[400px] rounded-full overflow-hidden border-4 border-cream/20 hover:border-cream/40 transition-colors duration-300">
+            <div className="relative w-[250px] h-[250px] rounded-full overflow-hidden border-4 border-cream/20 hover:border-cream/40 transition-colors duration-300">
               <img
                 src="/me.jpg"
                 alt="Daniel Ochoa"
