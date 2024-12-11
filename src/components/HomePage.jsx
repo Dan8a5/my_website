@@ -60,21 +60,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen relative">
       <ParticleBackground />
-      <div className="container mx-auto px-8 pl-24 pt-32 relative">
-        <nav className="fixed left-8 top-1/2 -translate-y-1/2 flex flex-col gap-8">
-          <a href="https://linkedin.com/in/daniel-m-ochoa" 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             className="group relative bg-cream/10 p-3 rounded-full hover:bg-olive/20 transition-all">
-            <Linkedin className="w-6 h-6 text-cream" />
-          </a>
-          <a href="https://github.com/Dan8a5" 
-             target="_blank"
-             rel="noopener noreferrer"
-             className="group relative bg-cream/10 p-3 rounded-full hover:bg-olive/20 transition-all">
-            <Github className="w-6 h-6 text-cream" />
-          </a>
-        </nav>
+   <div className="container mx-auto px-8 pl-24 pt-32 relative">
 
         <div className="flex flex-col lg:flex-row justify-between items-center gap-12">
           <div className={`max-w-2xl transform transition-all duration-1000 ${

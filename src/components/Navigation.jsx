@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Github, Linkedin } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +25,27 @@ const Navigation = () => {
         isScrolled ? "bg-[#4A5043]/80 backdrop-blur-sm" : "bg-transparent"
       }`}
     >
+      <div className="md:hidden flex justify-center py-4">
+        <div className="flex gap-4">
+          <a
+            href="https://linkedin.com/in/daniel-m-ochoa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative bg-cream/10 p-3 rounded-full hover:bg-olive/20 transition-all"
+          >
+            <Linkedin className="w-6 h-6 text-cream" />
+          </a>
+          <a
+            href="https://github.com/Dan8a5"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative bg-cream/10 p-3 rounded-full hover:bg-olive/20 transition-all"
+          >
+            <Github className="w-6 h-6 text-cream" />
+          </a>
+        </div>
+      </div>
+
       <div className="container mx-auto px-8 py-6 flex justify-between items-center" style={{ height: '96px' }}>
         {/* Logo Section */}
         <button
@@ -33,11 +54,10 @@ const Navigation = () => {
           aria-label="Go to home"
         >
           <img
-  src="/1045_4.png"
-  alt="Logo"
-  className="h-64 w-auto transform -translate-x-64" // Changed from y to x axis
-/>
-
+            src="/1045_4.png"
+            alt="Logo"
+            className="h-64 w-auto transform -translate-x-64"
+          />
         </button>
 
         {/* Desktop Navigation */}
