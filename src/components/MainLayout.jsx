@@ -6,28 +6,28 @@ import ProjectsPage from './ProjectsPage'
 import Navigation from './Navigation'
 
 const MainLayout = () => {
-   return (
-     <>
-       <Navigation />
-       <main className="h-screen overflow-y-auto scroll-smooth">
-         <div className="fixed inset-0 bg-gradient-to-br from-[#0c0c0c] via-[#111111] to-[#3c3e3b]" />
-         <div className="relative">
-           <section id="home" className="min-h-screen">
-             <HomePage />
-           </section>
-           <section id="about" className="min-h-screen pt-20">
-             <AboutPage />
-           </section>
-           <section id="projects" className="min-h-screen pt-0">
-             <ProjectsPage />
-           </section>
-           <section id="contact" className="min-h-screen pt-20">
-             <ContactPage />
-           </section>
-         </div>
-       </main>
-     </>
-   )
- }
+  return (
+    <>
+      <Navigation />
+      <main className="h-screen overflow-y-auto scroll-smooth">
+        <div className="fixed inset-0 bg-gradient-to-br from-[#0c0c0c] via-[#111111] to-[#3c3e3b]" />
+        <div className="relative px-4 md:px-8 max-w-7xl mx-auto"> {/* Add max-width and center */}
+          <section id="home" className="min-h-screen pt-16 md:pt-0">
+            <HomePage />
+          </section>
+          <section id="about" className="min-h-screen pt-16 md:pt-20">
+            <AboutPage />
+          </section>
+          <section id="projects" className="min-h-screen pt-16 md:pt-0">
+            <ProjectsPage />
+          </section>
+          <section id="contact" className="min-h-screen pt-16 md:pt-20">
+            <ContactPage />
+          </section>
+        </div>
+      </main>
+    </>
+  )
+}
 
 export default MainLayout
