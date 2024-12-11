@@ -11,11 +11,11 @@ const MainLayout = () => {
       <Navigation />
       <main className="h-screen overflow-y-auto scroll-smooth">
         <div className="fixed inset-0 bg-gradient-to-br from-[#0c0c0c] via-[#111111] to-[#3c3e3b]" />
-        <div className="relative px-4 md:px-8 max-w-7xl mx-auto"> {/* Add max-width and center */}
+        <div className="relative px-4 md:px-8 max-w-7xl mx-auto">
           <section id="home" className="min-h-screen pt-16 md:pt-0">
             <HomePage />
           </section>
-          <section id="about" className="min-h-screen pt-16 md:pt-20">
+          <section id="about" className="h-3/4 pt-12 md:pt-18">
             <AboutPage />
           </section>
           <section id="projects" className="min-h-screen pt-16 md:pt-0">
