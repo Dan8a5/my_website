@@ -6,7 +6,6 @@ import {
   FiChevronDown,
   FiUser,
   FiCode,
-  FiBriefcase,
   FiBook,
 } from "react-icons/fi";
 
@@ -28,27 +27,12 @@ const AboutPage = () => {
         "Supabase",
         "SQLite",
         "Sqlmodel",
-        "SQLAlchemy",
+        "SqlAlchemy",
       ],
     },
     {
       category: "Tools",
-      items: ["Git", "GitHub", "Netlify", "VS Code"],
-    },
-  ];
-
-  const experience = [
-    {
-      title: "Web Developer",
-      company: "Company Name",
-      period: "2024 - Present",
-      description:
-        "Led development of key features resulting in 40% increase in user engagement.",
-      achievements: [
-        "Implemented responsive design patterns",
-        "Optimized application performance",
-        "Collaborated with cross-functional teams",
-      ],
+      items: ["Git", "GitHub", "Netlify", "VS Code","Figma"],
     },
   ];
 
@@ -174,31 +158,6 @@ const AboutPage = () => {
                       </motion.span>
                     ))}
                   </div>
-                </div>
-              ))}
-            </div>
-          </Section>
-
-          <Section title="Experience" icon={FiBriefcase} id="experience">
-            <div className="space-y-6">
-              {experience.map((exp, index) => (
-                <div key={index} className="border-l-2 border-cream/20 pl-4">
-                  <h3 className="text-2xl text-cream/90">{exp.title}</h3>
-                  <p className="text-cream/60">
-                    {exp.company} • {exp.period}
-                  </p>
-                  <p className="mt-2 text-cream/80">{exp.description}</p>
-                  <ul className="mt-2 space-y-1">
-                    {exp.achievements.map((achievement, i) => (
-                      <li
-                        key={i}
-                        className="text-cream/70 flex items-center gap-2"
-                      >
-                        <span className="w-1.5 h-1.5 rounded-full bg-cream/40" />
-                        {achievement}
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               ))}
             </div>
