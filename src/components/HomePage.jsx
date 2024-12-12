@@ -79,9 +79,8 @@ const HomePage = () => {
             <p className="text-cream/80 text-xl mb-12 max-w-xl leading-relaxed">
               Hello! I'm Daniel Ochoa, a Greenville, South Carolina based Software Developer with a passion for creating innovative digital experiences.
             </p>
-
             <button 
-              onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => window.location.href = 'mailto:daniel9875@gmail.com'}
               className="bg-cream/90 hover:bg-cream text-olive px-8 py-3 rounded-full text-lg font-medium transition-all hover:-translate-y-1">
               Say Hello ✈️
             </button>
